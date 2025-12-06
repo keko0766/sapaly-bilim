@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sapaly Bilim - Образовательный центр. Качественное образование для всех.">
+    <meta name="keywords" content="образование, курсы, обучение, Sapaly Bilim, Казахстан">
+    <meta name="author" content="Sapaly Bilim">
+    <meta name="theme-color" content="#1a73e8">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sapaly Bilim - Образовательный центр">
+    <meta property="og:description" content="Сапалы білім - болашаққа қадам">
+    
+    <title>Sapaly Bilim - Образовательный центр</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h1>Sapaly Bilim</h1>
+                <span class="nav__subtitle">Образовательный центр</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Басты бет</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Біз туралы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#courses" class="nav__link">Курстар</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Байланыс</a>
+                </li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content fade-in">
+                    <h1 class="hero__title">
+                        Сапалы білім - <br>
+                        <span class="hero__title-accent">болашаққа қадам</span>
+                    </h1>
+                    <p class="hero__description">
+                        Біз сізге заманауи білім беру және дамыту мүмкіндіктерін ұсынамыз. 
+                        Кәсіби мұғалімдер мен тиімді оқу бағдарламаларымен білім алуды бастаңыз.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="https://wa.me/77000000000?text=Сәлем! Мен курстар туралы білгім келеді" 
+                           class="btn btn--primary" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Оқуды бастау
+                        </a>
+                        <a href="#courses" class="btn btn--secondary">
+                            Курстарды көру
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image fade-in">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__decoration hero__decoration--1"></div>
+                        <div class="hero__decoration hero__decoration--2"></div>
+                        <div class="hero__illustration">
+                            <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" class="hero__svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a73e8;stop-opacity:0.1" />
+                                        <stop offset="100%" style="stop-color:#1a73e8;stop-opacity:0.3" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="500" height="400" fill="url(#grad1)" rx="24"/>
+                                <!-- Book/Education Icon -->
+                                <g transform="translate(250, 150)">
+                                    <rect x="-60" y="-40" width="120" height="80" rx="8" fill="#1a73e8" opacity="0.2"/>
+                                    <rect x="-50" y="-30" width="100" height="60" rx="6" fill="#1a73e8" opacity="0.3"/>
+                                    <line x1="-30" y1="-20" x2="30" y2="-20" stroke="#1a73e8" stroke-width="2"/>
+                                    <line x1="-30" y1="0" x2="30" y2="0" stroke="#1a73e8" stroke-width="2"/>
+                                    <line x1="-30" y1="20" x2="30" y2="20" stroke="#1a73e8" stroke-width="2"/>
+                                </g>
+                                <!-- Graduation Cap -->
+                                <g transform="translate(250, 100)">
+                                    <path d="M-40 -20 L40 -20 L30 0 L-30 0 Z" fill="#1a73e8" opacity="0.4"/>
+                                    <circle cx="0" cy="-20" r="8" fill="#1a73e8" opacity="0.3"/>
+                                </g>
+                                <!-- Stars -->
+                                <g fill="#1a73e8" opacity="0.2">
+                                    <path d="M100 80 L105 95 L120 95 L108 105 L113 120 L100 110 L87 120 L92 105 L80 95 L95 95 Z"/>
+                                    <path d="M400 120 L403 130 L413 130 L405 137 L408 147 L400 140 L392 147 L395 137 L387 130 L397 130 Z"/>
+                                    <path d="M150 300 L152 306 L158 306 L153 311 L155 317 L150 313 L145 317 L147 311 L142 306 L148 306 Z"/>
+                                </g>
+                                <text x="250" y="320" text-anchor="middle" fill="#1a73e8" font-size="32" font-weight="700" font-family="Inter, sans-serif">Sapaly Bilim</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <h2 class="section__title">Біз туралы</h2>
+                    <p class="section__subtitle">
+                        Біздің мақсатымыз - әрбір студентке сапалы білім беру
+                    </p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="card fade-in">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Кәсіби мұғалімдер</h3>
+                        <p class="card__description">
+                            Тәжірибелі және білікті мұғалімдерден оқыңыз
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"/>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Заманауи әдістер</h3>
+                        <p class="card__description">
+                            Ең соңғы оқу технологиялары мен әдістерін қолданамыз
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Жеке тұрғыдан көзқарас</h3>
+                        <p class="card__description">
+                            Әр студентке жеке көзқарас және қолдау көрсетеміз
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses section" id="courses">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <h2 class="section__title">Біздің курстар</h2>
+                    <p class="section__subtitle">
+                        Әртүрлі бағыттарда сапалы оқу бағдарламалары
+                    </p>
+                </div>
+                
+                <div class="courses__grid">
+                    <div class="course-card fade-in">
+                        <div class="course-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="course-card__title">Математика</h3>
+                        <p class="course-card__description">
+                            Математикалық ойлауды дамыту және емтиханға дайындалу
+                        </p>
+                        <ul class="course-card__features">
+                            <li>Бастапқы деңгейден бастап</li>
+                            <li>Тәжірибелі мұғалімдер</li>
+                            <li>Интерактивті сабақтар</li>
+                        </ul>
+                        <a href="https://wa.me/77000000000?text=Математика курсы туралы білгім келеді" 
+                           class="btn btn--primary btn--small" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Оқуды бастау
+                        </a>
+                    </div>
+                    
+                    <div class="course-card fade-in">
+                        <div class="course-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                        </div>
+                        <h3 class="course-card__title">Қазақ тілі</h3>
+                        <p class="course-card__description">
+                            Қазақ тілін тереңдетіп оқу және грамматиканы меңгеру
+                        </p>
+                        <ul class="course-card__features">
+                            <li>Тіл дағдыларын дамыту</li>
+                            <li>Әдебиет талдауы</li>
+                            <li>Емтиханға дайындық</li>
+                        </ul>
+                        <a href="https://wa.me/77000000000?text=Қазақ тілі курсы туралы білгім келеді" 
+                           class="btn btn--primary btn--small" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Оқуды бастау
+                        </a>
+                    </div>
+                    
+                    <div class="course-card fade-in">
+                        <div class="course-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="course-card__title">Ағылшын тілі</h3>
+                        <p class="course-card__description">
+                            Халықаралық деңгейде ағылшын тілін үйрену
+                        </p>
+                        <ul class="course-card__features">
+                            <li>Барлық деңгейлер үшін</li>
+                            <li>Тілдік дағдыларды дамыту</li>
+                            <li>Халықаралық сертификаттар</li>
+                        </ul>
+                        <a href="https://wa.me/77000000000?text=Ағылшын тілі курсы туралы білгім келеді" 
+                           class="btn btn--primary btn--small" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Оқуды бастау
+                        </a>
+                    </div>
+                    
+                    <div class="course-card fade-in">
+                        <div class="course-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="course-card__title">Информатика</h3>
+                        <p class="course-card__description">
+                            Бағдарламалау, веб-дизайн және IT технологиялары
+                        </p>
+                        <ul class="course-card__features">
+                            <li>Практикалық жобалар</li>
+                            <li>Заманауи технологиялар</li>
+                            <li>Портфолио құру</li>
+                        </ul>
+                        <a href="https://wa.me/77000000000?text=Информатика курсы туралы білгім келеді" 
+                           class="btn btn--primary btn--small" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Оқуды бастау
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <h2 class="section__title">Байланыс</h2>
+                    <p class="section__subtitle">
+                        Бізбен байланысыңыз - сіздің сұрақтарыңызға жауап береміз
+                    </p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info fade-in">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact__title">Мекен-жай</h3>
+                                <p class="contact__text">Қазақстан, Алматы қаласы</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact__title">Телефон</h3>
+                                <p class="contact__text">+7 (700) 000-00-00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="contact__title">Электрондық пошта</h3>
+                                <p class="contact__text">info@sapalybilim.kz</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__cta fade-in">
+                        <h3 class="contact__cta-title">Оқуды бастауға дайынсыз ба?</h3>
+                        <p class="contact__cta-text">
+                            Бізбен WhatsApp арқылы байланысыңыз және барлық сұрақтарыңызға жауап алыңыз
+                        </p>
+                        <a href="https://wa.me/77000000000?text=Сәлем! Мен курстар туралы білгім келеді" 
+                           class="btn btn--primary btn--large" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            WhatsApp арқылы байланысу
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__title">Sapaly Bilim</h3>
+                    <p class="footer__subtitle">Образовательный центр</p>
+                    <p class="footer__description">
+                        Сапалы білім беру - біздің миссиямыз
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Байланыс</h4>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Басты бет</a></li>
+                        <li><a href="#about" class="footer__link">Біз туралы</a></li>
+                        <li><a href="#courses" class="footer__link">Курстар</a></li>
+                        <li><a href="#contact" class="footer__link">Байланыс</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Sapaly Bilim. Барлық құқықтар қорғалған.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
