@@ -2,7 +2,7 @@
    CSS Variables & Reset
    ============================================ */
 
-:root {
+   :root {
     /* Color Palette */
     --primary-color: #1a73e8;
     --primary-dark: #1557b0;
@@ -527,11 +527,176 @@ body {
 }
 
 /* ============================================
+   Additional Education Section
+   ============================================ */
+
+.additional {
+    background-color: var(--white);
+}
+
+/* ============================================
+   Services Section
+   ============================================ */
+
+.services {
+    background-color: var(--light-grey);
+}
+
+.services__content {
+    width: 100%;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card__icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-md);
+    color: var(--primary-color);
+    background-color: #e8f0fe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card__icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.service-card__title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+.service-card__description {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.service-card__features {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+    padding-left: 0;
+    text-align: left;
+}
+
+.service-card__features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-light);
+    position: relative;
+    padding-left: var(--spacing-md);
+}
+
+.service-card__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.service-card .btn {
+    margin-top: auto;
+    width: 100%;
+}
+
+/* ============================================
+   Payment Methods Section
+   ============================================ */
+
+.payment {
+    background-color: var(--white);
+}
+
+.payment__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.payment-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #f5f7fa 100%);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.payment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.payment-card__icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-md);
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.payment-card__icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.payment-card__title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-dark);
+}
+
+.payment-card__description {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+}
+
+/* ============================================
    Contact Section
    ============================================ */
 
 .contact {
-    background-color: var(--white);
+    background-color: var(--light-grey);
 }
 
 .contact__content {
@@ -579,6 +744,18 @@ body {
 
 .contact__text {
     color: var(--text-light);
+}
+
+.contact__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    display: inline-block;
+}
+
+.contact__link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
 }
 
 .contact__cta {
@@ -663,6 +840,36 @@ body {
 
 .footer__link:hover {
     color: var(--white);
+}
+
+.footer__social {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--grey);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    font-size: 0.9375rem;
+}
+
+.footer__social-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__social-link:hover {
+    color: var(--white);
+    transform: translateX(4px);
+}
+
+.footer__social-link span {
+    font-weight: var(--font-weight-medium);
 }
 
 .footer__bottom {
@@ -830,14 +1037,28 @@ body {
     
     /* Grids */
     .about__grid,
-    .courses__grid {
+    .courses__grid,
+    .services__grid,
+    .payment__grid {
         grid-template-columns: 1fr;
     }
     
     /* Cards */
     .card,
-    .course-card {
+    .course-card,
+    .service-card,
+    .payment-card {
         padding: var(--spacing-md);
+    }
+    
+    /* Services */
+    .services__grid {
+        max-width: 100%;
+    }
+    
+    /* Payment */
+    .payment__grid {
+        max-width: 100%;
     }
     
     /* Contact */

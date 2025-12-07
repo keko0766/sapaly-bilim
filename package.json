@@ -1,0 +1,20 @@
+{
+  "name": "sapaly-bilim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "test",
+    "dev": "script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keko0766/sapaly-bilim-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keko0766/sapaly-bilim-demo/issues"
+  },
+  "homepage": "https://github.com/keko0766/sapaly-bilim-demo#readme"
+}
